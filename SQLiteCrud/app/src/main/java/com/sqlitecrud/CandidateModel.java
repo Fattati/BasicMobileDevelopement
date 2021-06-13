@@ -1,11 +1,11 @@
 package com.sqlitecrud;
 
 public class CandidateModel {
-    String id="";
-    String name="";
-    String email="";
-    String phone="";
-    String created_at="";
+    String id = "";
+    String name = "";
+    String email = "";
+    String phone = "";
+    String created_at = "";
 
     public CandidateModel(String id, String name, String email, String phone, String created_at) {
         this.id = id;
@@ -13,6 +13,10 @@ public class CandidateModel {
         this.email = email;
         this.phone = phone;
         this.created_at = created_at;
+    }
+
+    public CandidateModel() {
+
     }
 
     public String getId() {

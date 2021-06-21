@@ -12,6 +12,9 @@ import retrofit2.http.Path;
 
 public interface ApiService {
 
+    //Interface to call the REST API
+    //PUT & POST Annotations for getting the users from DB & inserting new users into DB
+    //Both methods will have a Json Body having name/pass from EditText
     @PUT("/addUser")
     Call<ResponseClass> addUser(@Body ResponseRegisterClass responseRegisterClass);
 

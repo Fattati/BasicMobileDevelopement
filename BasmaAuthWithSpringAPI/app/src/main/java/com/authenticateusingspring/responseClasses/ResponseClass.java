@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-@Generated("com.robohorse.robopojogenerator")
+@Generated("com.robohorse.robopojogenerator") //json -> Gson
 public class ResponseClass implements Serializable {
 
     @SerializedName("id")

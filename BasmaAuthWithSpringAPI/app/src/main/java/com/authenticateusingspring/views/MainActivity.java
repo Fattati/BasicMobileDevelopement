@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validateUsername() && validatePassword()) {
+                if (validateUsername() && validatePassword()) { //verify if fields empty
                     ResponseRegisterClass responseRegisterClass = new ResponseRegisterClass(etUsername.getText().toString(), etPassword.getText().toString());
 
                     ApiService apiService = Network.getInstance().create(ApiService.class);
